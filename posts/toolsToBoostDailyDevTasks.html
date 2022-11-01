@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../styles/layout.css">
+    <title>Tools to boost daily dev tasks</title>
+</head>
+<body>
+<h1 id="header">Tools to boost daily dev tasks</h1>
+
+<section>In daily life as dev, there are tasks we do repetitively, but don't realise how much time could have been saved
+    or spent on something else.
+</section>
+
+<section>
+    For example
+    <ol>
+        <li>using `cd` to deep dive 5 level of dirs to find a project</li>
+        <li>running a command on terminal everytime time to get the current IP address or find what processes are
+            running and their PID
+        </li>
+        <li>(for me the worst of all is) doing `CMD+TAB` to find the desired application</li>
+    </ol>
+    Following are some tools and programs which can speed these tasks up.
+</section>
+
+<section>
+    <h2>Terminal</h2>
+
+    <p>Terminal is one of the most important tool for a dev. I find
+        [Alacritty](https://github.com/alacritty/alacritty) clean
+        and simple to work on. The cool thing about this terminal is that it is superfast and fully
+        configurable.</p>
+
+    <p>Check out my <a href="https://github.com/sukhiboi/dotfiles/blob/main/.config/alacritty/alacritty.yml">Alacritty
+        Config</a></p>
+
+    <p>Combine it with [Tmux](https://github.com/tmux/tmux) to get multiple windows and panes support.</p>
+</section>
+
+<section>
+    <h2>Workspace</h2>
+
+    <h3>MacOS Status Bar</h3>
+
+    <p>This is something I started using recently. [SketchyBar](https://github.com/FelixKratz/SketchyBar) allows
+        customizing
+        macOS status bar with **shell scripts** (which is amazing).</p>
+
+    <p>
+        The program comes with few pre-written shell scripts for basic widgets (*plugins*), but allow adding more.
+    <ol>
+        <li>Battery (Built In)</li>
+        <li>Data and Time (Built In, but I customized it)</li>
+        <li>Docker widget, to tell me if my docker is running (because I run it with Colima)</li>
+        <li>An internet widget, to tell me which network I'm connected to currently and what is IP address</li>
+    </ol>
+    </p>
+
+    <p>
+        Check out my custom plugins and SketchyBar config on <a
+            href="https://github.com/sukhiboi/dotfiles/tree/main/sketchybar">SketchyBar
+        config</a></p>
+
+    <h3>Multiple desktops</h3>
+
+    <p>This introduced me to way of working with multiple workspaces (desktops in macOS) and assign specific programs to
+        each
+        of the desktops.</p>
+
+    <p>MacOS have shortcuts to switch between different desktops quickly. Create multiple desktops (10 desktops), after
+        that go
+        to *System Preferences > Keyboard > Shortcuts* and check all *Switch to desktop ${n}* shortcuts.
+
+        > Reduce the animation while switching desktops. It can be found in *System Preferences > Accessibility >
+        Display >
+        Reduce Motion*</p>
+
+    <p>Sketchy bar also support for multiple desktops. It allows naming desktops, and it shows on status bar with
+        highlighting
+        which desktop is currently active.</p>
+
+    <h3>Window Managers</h3>
+
+    <p>I saw few of my colleagues using window mangers which can tile windows, move them to different desktops, adjust
+        their
+        sizes and few more things which was fascinating. So I decided to give it a try, and installed
+        <a href="https://github.com/ianyh/Amethyst">Amethyst</a></p>
+
+    <p>There is a good amount of things amethyst can do and for everything there is shortcut. Learning shortcuts and
+        concept
+        was a bit hard, but after spending some time with it, it's really easy to switch between different apps and
+        organising
+        them.</p>
+</section>
+
+<section>
+    <h2>IDE</h2>
+
+    <p>I've been working on IntelliJ Idea Ultimate for more than 1 year now, and have grown over it. I've customised it
+        over
+        time. I love apps and websites with clean UI, so I configured it that way and disabled all the distracting
+        things.</p>
+
+    <h3>Syncing Settings</h3>
+
+    <p>I sync all my Intellij setting in a git repo. The setup settings can be found in the *File > Manage IDE Settings
+        >
+        Setting Repository*. Check out my [Intellij setting repo](https://github.com/sukhiboi/intellijSettings). These
+        settings
+        basically remove all the actions bars that are visible by default.</p>
+
+    <h3>Themes</h3>
+
+    <p>Dracula theme that IntelliJ gives out of the box is really nice. It doesn't hurt the eyes, the colors are
+        neutral, and
+        it overall looks good.</p>
+
+    <h3>Icon Themes</h3>
+
+    <p>Default icon theme is comfortable, so never face a need to change.</p>
+
+    <h3>Plugins</h3>
+
+    <p>Currently I'm using...
+    <ol>
+        <li>Styled Component (For syntax highlighting, and auto-completion)</li>
+        <li>IdeaVim (I use this because I use vim a lot, and once I tried to do my day-to-day coding on vim)</li>
+        <li>Prettier</li>
+    </ol>
+    </p>
+</section>
+
+<section>
+    <h2>Command Line Tools</h2>
+
+    <h3>Vim</h3>
+
+    <p>Any small changes that I want to make, I don't like to go to Intellij or VSCode. Just fire up vim and make
+        changes. This
+        doesn't need to be vim, it can be nano.</p>
+
+    <h3>AutoJump</h3>
+
+    <p>It is very convenient to not write the full path or cd multiple dirs to open a project dir in terminal. AutoJump
+        keep
+        tracks of all the visited dirs, and open them with just project dir name. It's been very useful and time
+        saviour.</p>
+
+    <h3>Jq</h3>
+
+    <p>Quickly parse JSON responses directly in terminal. Hitting an API which responds in JSON, just pass it to jq and
+        transform it.</p>
+
+    <h3>Htop</h3>
+
+    <p>A dashboard tool which show what all processes running and CPU stats with ability to perform different operations
+        on it.</p>
+</section>
+
+<section>
+    <p>So yeah that's all the tools and programs I'm currently working with. Do suggest other tools you find
+        interesting.</p>
+
+    <p>You can follow me on <a href="https://github.com/sukhiboi">GitHub</a></p>
+</section>
+</body>
+</html>
