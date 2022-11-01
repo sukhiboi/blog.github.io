@@ -9,6 +9,10 @@ header {
     border-bottom: 1px dashed #333333;
 }
 
+section {
+  font-size: 14px;
+}
+
 .back-button {
     padding-bottom: 0.5rem;
 }
